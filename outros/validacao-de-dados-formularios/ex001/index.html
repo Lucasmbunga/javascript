@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Campos Obrigatórios</title>
+</head>
+<body>
+    <form action="javascript:dadosRecebidos()" method="post" name="fCadastro">
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" size="30"> <br>
+
+        <label for="iidade">Idade</label>
+        <input type="text" name="idade" id="iidade"> <br>
+
+        Sexo <br>
+        <input type="radio" name="sexo" id="sexomas">
+        <label for="sexomas">Masculino</label>
+        <input type="radio" name="sexo" id="sexofem">
+        <label for="sexofem">Feminino</label>
+
+        <p>
+            Qual é o teu esporte favorito?
+            <input type="checkbox" name="esporte" id="fut">
+            <label for="fut">Futebol</label>
+            <input type="checkbox" name="esporte" id="vol">
+            <label for="vol">Voleibol</label>
+            <input type="checkbox" name="esporte" id="bas">
+            <label for="bas">Basquete</label>
+        </p>
+        
+        <p>Qual sua estação do ano favorita?
+            <select name="estacao" id="estacao">
+                <option value="">Selecione</option>
+                <option value="verao">Verão</option>
+                <option value="outono">Outono</option>
+                <option value="primavera">Primavera</option>
+                <option value="inverno">Inverno</option>
+            </select>
+        </p>
+        <input type="button" value="Salvar" onclick="validacao()">
+    </form>
+    <script src="ValidarCamposObrigatorios.js"></script>
+</body>
+</html>
